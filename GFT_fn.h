@@ -1,5 +1,6 @@
 #ifndef GFT_FN_H__
 #define GFT_FN_H__
+
 #include <math.h>
 #include <stdlib.h>
 #include "ValueType.h"

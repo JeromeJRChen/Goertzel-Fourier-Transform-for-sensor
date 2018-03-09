@@ -1,4 +1,4 @@
-#include "stdio.h"
+//#include "stdio.h"
 #include "GFT_fn.h"
 
 void generate_source(VALTYP2** source)
@@ -9,18 +9,18 @@ void generate_source(VALTYP2** source)
 	for (i = 0; i<N_sample; i++)
 	{
 #ifdef FLOAT_VER
-		**source = sin(5 * 2 * pi*i / Sampling_rate)*scale;
+		**source = sin(2 * 2 * pi*i / Sampling_rate)*scale;
 #endif
 #ifdef FIXED_VER
-		**source = (VALTYP2)(round(sin(5 * 2 * pi*i / Sampling_rate)*scale));
-		if (llabs(**source) > upper_limit )
-		{
-			printf("i = %d, source is too large\n", i);
-		}
-		else if (llabs(**source) < lower_limit)
-		{
-			printf("i = %d, source is too small\n", i);
-		}
+		**source = (VALTYP2)(round(sin(2 * 2 * pi*i / Sampling_rate)*scale));
+//		if (llabs(**source) > upper_limit )
+//		{
+//			printf("i = %d, source is too large\n", i);
+//		}
+//		else if (llabs(**source) < lower_limit)
+//		{
+//			printf("i = %d, source is too small\n", i);
+//		}
 #endif
 		++(*source);
 	}

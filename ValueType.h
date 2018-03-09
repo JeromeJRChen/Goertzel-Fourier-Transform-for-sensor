@@ -5,7 +5,7 @@
 #ifndef VALUE_TYPE_H__
 #define VALUE_TYPE_H__
 // only can select FIXED_VER or FLOAT_VER, depending on VALTYP2
-#define FLOAT_VER
+#define FIXED_VER
 
 #ifdef FLOAT_VER
 #define VALTYP1 double
@@ -14,7 +14,7 @@
 #endif
 
 #ifdef FIXED_VER
-#define VALTYP1 double
+#define VALTYP1 float
 #define VALTYP2 long long
 #define VALTYP3 int
 #endif

@@ -1,4 +1,4 @@
-#include <stdio.h>
+//#include "stdio.h"
 #include "GFT_fn.h"
 
 void effi_check(VALTYP3 n)
@@ -10,8 +10,8 @@ void effi_check(VALTYP3 n)
 	M = round((5.*(1 << power)) / (6.*N_sample)*power);
 	if (M <= n)
 	{
-		printf("\nThe times of Goertzel method is n_GA = %d.", n_GA);
-		printf("\nIt should be less than M = %d.\n", M);
-		printf("Suggest using Fast Fourier transform.\n");
+//		printf("\nThe times of Goertzel method is n_GA = %d.", n_GA);
+//		printf("\nIt should be less than M = %d.\n", M);
+//		printf("Suggest using Fast Fourier transform.\n");
 	}
 }
