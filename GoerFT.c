@@ -27,8 +27,9 @@ void GoerFT(VALTYP2* GFT, VALTYP3 k, VALTYP2* source)
 	*GFT = ((*GFT) * 2) / N_sample;
 #endif
 #ifdef FIXED_VER
-	alpha = (VALTYP2)round(2*(1-cos((2 * pi*k) / N_sample))*scale_part);
+//	alpha = (VALTYP2)round(2*(1-cos((2 * pi*k) / N_sample))*scale_part);
 //	alpha = (VALTYP2)round(2*cos((2 * pi*k) / N_sample)*scale_part);
+	genAlpha(&alpha, k);
 //	if (llabs(alpha) > upper_limit)
 //	{
 //		printf("alpha is too large\n");
