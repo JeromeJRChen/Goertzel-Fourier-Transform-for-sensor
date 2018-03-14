@@ -2,7 +2,7 @@
 
 void band_width(VALTYP2* sum, VALTYP2* source, VALTYP1 Target_freq, VALTYP1 beam_width)
 {
-	VALTYP1 ratio = (VALTYP1)(N_sample - 1) / Sampling_rate;
+	VALTYP1 ratio = (VALTYP1)(N_SAMPLE - 1) / Sampling_rate;
 	VALTYP1 dif = beam_width / 2 * ratio;
 	VALTYP1 mid = Target_freq * ratio;
 	VALTYP3 k_m = round(mid - dif);

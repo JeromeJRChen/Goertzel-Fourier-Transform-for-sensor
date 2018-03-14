@@ -15,7 +15,7 @@
 
 #ifdef FIXED_VER
 #define VALTYP1 float
-#define VALTYP2 long long
+#define VALTYP2 long
 #define VALTYP3 int
 #endif
 

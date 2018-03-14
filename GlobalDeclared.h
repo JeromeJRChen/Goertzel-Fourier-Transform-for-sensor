@@ -2,11 +2,10 @@
 #define GLOBAL_DECLARED_H__
 #include "ValueType.h"
 
-VALTYP3 N_sample;
+#define N_SAMPLE 9
+#define N_BEAM 4
 VALTYP3 Sampling_rate;
-VALTYP3 N_beam;
 VALTYP1 beam_width;
-VALTYP1* Target_freq;
 
 VALTYP1 scale;
 VALTYP1 scale_part;
